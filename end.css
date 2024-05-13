@@ -25,19 +25,64 @@ table{
     height: 600px;
     width: 1000px;
 }
-#td1{
-    margin-top: 100px;
-    height: 500px;
-    background-color: rgb(27, 27, 27);
+td {
+    text-align: center;
+    vertical-align: middle;
 }
-#td2{
-    height: 600px;
+
+#td1 {
     background-color: rgb(27, 27, 27);
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
-#td3{
-    margin-top: 50px;
-    height: 550px;
+
+#td2 {
     background-color: rgb(27, 27, 27);
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#td3 {
+    background-color: rgb(27, 27, 27);
+    animation-name: example3;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example1 {
+    from {
+        margin-top: 200px;
+        height: 400px;
+    }
+    to {
+        margin-top: 100px;
+        height: 500px;
+    }
+}
+
+
+@keyframes example3 {
+    from {
+        height: 450px;
+        margin-top: 150px;
+    }
+    to {
+        margin-top: 50px;
+        height: 550px;
+    }
+}
+
+@keyframes example2 {
+    from {
+        margin-top: 100px;
+        height: 500px;
+    }
+    to {
+        margin-top: 0px;
+        height: 600px;
+    }
 }
 h2{
     text-align: center;
