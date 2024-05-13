@@ -8,7 +8,7 @@
     <body>
         <h1>Gambling Room</h1>
         <div class="main">
-            <form name="game" action="game.php" method="POST">
+            <form name="game" action="game.php" method="POST" autocomplete="off">
                 <ul id="pl">
                     <li>
                         <div class="players">

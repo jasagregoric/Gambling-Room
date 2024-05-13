@@ -112,19 +112,52 @@
                 <td class="pl">
                     <div class="pla">
                         <h3><?php echo $_SESSION["p1"]; ?></h3>
-                        <?php p1();?>
+                        <?php
+                        if((isset($_POST["throw"]))==false) {
+                            echo "<h4>Current Throw:</h4>
+                                  <h4>0</h4>
+                                  <h4>Combined:</h4>
+                                  <h4 class=\"d\">0</h4>
+                                  <div class=\"dic\">
+                                      <div class=\"di\">";
+                            echo "</div>
+                                  </div>";
+                        }
+                        p1();?>
                     </div>
                 </td>
                 <td class="pl">
                     <div class="pla">
                         <h3><?php echo $_SESSION["p2"]; ?></h3>
-                        <?php p2(); ?>
+                        <?php
+                        if((isset($_POST["throw"]))==false) {
+                            echo "<h4>Current Throw:</h4>
+                                  <h4>0</h4>
+                                  <h4>Combined:</h4>
+                                  <h4 class=\"d\">0</h4>
+                                  <div class=\"dic\">
+                                      <div class=\"di\">";
+                            echo "</div>
+                                  </div>";
+                        }
+                        p2();?>
                     </div>
                 </td>
                 <td class="pl">
                     <div class="pla">
                         <h3><?php echo $_SESSION["p3"]; ?></h3>
-                        <?php p3(); ?>
+                        <?php
+                        if((isset($_POST["throw"]))==false) {
+                            echo "<h4>Current Throw:</h4>
+                                  <h4>0</h4>
+                                  <h4>Combined:</h4>
+                                  <h4 class=\"d\">0</h4>
+                                  <div class=\"dic\">
+                                      <div class=\"di\">";
+                            echo "</div>
+                                  </div>";
+                        }
+                        p3();?>
                     </div>
                 </td>
             </tr>
