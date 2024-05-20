@@ -15,6 +15,7 @@
     <link rel="icon" type="image/x-icon" href="img/1.png">
 </head>
 <body>
+    <div class="bac"></div>
     <h1>CONGRATULATIONS</h1>
     <div class="main">
         <table>
@@ -45,8 +46,23 @@
     </div>
     <h5 id="cnt">You can roll again in 15</h5>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+<script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function(){
+        const container = document.querySelector('.main')
+        const fireworks = new Fireworks.default(container)
+        fireworks.start()
+        const canvas = container.querySelector('canvas');
+        if (canvas) {
+            canvas.style.position = 'absolute';
+            canvas.style.width = '1700px';
+            canvas.style.height = '919px';
+            canvas.style.left = '50%';
+            canvas.style.marginLeft='-850px'
+            canvas.style.zIndex='1';
+            canvas.style.top='0px'
+        }
         const a=document.getElementById("cnt");
         i=15;
         setInterval(function(){

@@ -14,6 +14,15 @@ h1{
     margin-top: 50px;
     text-shadow: 4px 4px 4px rgb(170, 23, 23);
 }
+canvas{
+    position: absolute;
+    top: 200px;
+    width: 1500px;
+    height: 900px;
+    z-index: 2;
+    left: 50%;
+    margin-left: -750px;
+}
 .main{
     width: 1000px;
     height: 600px;
